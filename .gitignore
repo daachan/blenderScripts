@@ -1,0 +1,38 @@
+# --- Python / Venv ---
+# 仮想環境フォルダ (venv, .venvなど)
+.venv/
+venv/
+ENV/
+env/
+
+# Pythonのキャッシュファイル
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Blender ---
+# Blenderが自動で作成するバックアップファイル (.blend1, .blend2...)
+*.blend1
+*.blend2
+*.blend3
+*.blend4
+*.blend5
+
+# Blenderのクラッシュログ
+*.crash.txt
+
+# --- VS Code ---
+# VS Codeの設定フォルダ（共有したい場合は除外を外してもOK）
+# .vscode/
+# ただし、デバッグ用の設定 launch.json だけは除外したい場合
+.vscode/launch.json
+
+# --- OS / 共通 ---
+# macOSのシステムファイル
+.DS_Store
+# Windowsのシステムファイル
+Thumbs.db
+
+# --- 外部ライブラリ (開発中にインストールしたもの) ---
+# fake-bpy-module など、本体ではなく環境側にインストールすべきもの
+# もし scripts/modules 内に pip で直接入れた場合は、ここに追加
