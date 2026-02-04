@@ -1,0 +1,9 @@
+import importlib
+import debug
+importlib.reload(
+    #rename own script file name
+    debug
+    )
+
+# This code connects blender to vscode, and makes blender waiting-mode for vscode debug response. 
+# This is used for templete. Copy and paste for your blender project scripting editor. 
